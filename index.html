@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+
+    #qrcode {
+        margin-top: 20px;
+    }
+
+
+    input{width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: red;
+} input::placeholder{
+    color: white;
+}.color{
+    width: 40px;
+    height: 30px;
+    margin-top: 400px;
+
+} body{margin: 0 auto;
+text-align: center; 
+background-image: url('https://img.wattpad.com/f270cc52879073f8773f70978dbd559e71f718a8/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f454d31554b6e332d7a6466774f513d3d2d3933323338363430392e313637386165313735306166613937383338343938333237373633342e676966');
+
+background-size: 100%;}
+.box{
+    display: flex; gap: 40px;
+    align-items: center;
+    justify-content: center;
+}#qrcode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input:hover{border-radius: 10px;
+background: linear-gradient(#34d399, #06b6d4);
+border: none;}
+button{
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: #06b6d4;
+} button:hover{
+    border: 2px solid #34d399;
+    background-color: indigo;
+    color: white;
+    width: 170px;
+    height: 40px;
+}
+    </style>
+<body>
+    
+<header>
+    <input type="text" placeholder="Enter QR Code Data"> <br> <br> <br>
+      <button id="generate">Generate QR Code</button>
+</header> <br> <br>
+ 
+
+   
+  
+    <div id="qrcode"></div>
+<div class="box"> <input type="color" class="color">
+  <input type="color" class="color">
+</div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
+
